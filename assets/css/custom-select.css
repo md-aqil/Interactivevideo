@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.center-box {
+    width: 200px;
+    margin: 40px auto;
+}
+
+.ui-select {
+
+    position: relative;
+    height: 45px;
+    width: 100%;
+    background: #fff;
+
+}
+
+
+
+.ui-select>span {
+    color: #757575;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    height: 45px;
+    box-sizing: border-box;
+    line-height: 45px;
+    padding: 0 12px;
+    border-radius: 3px;
+}
+
+.ui-select ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform-origin: top;
+    animation-fill-mode: forwards;
+    -webkit-transform: scaleY(0);
+    display: block;
+    transition: all .1s ease-out;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, .15) !important;
+    width: 100%;
+    background: #fff;
+    max-height: 500px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 10000;
+    border: 1px solid var(--theme-color);
+    margin-top: -1px;
+    border-top: none;
+    top: -2px;
+    max-height: 250px;
+    overflow-y: auto;
+
+}
+
+.ui-select li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.ui-select li:hover {
+    background: #f1f1f1;
+}
+
+.ui-select.open>span {
+    border: 1px solid var(--theme-color);
+
+}
+
+.ui-select.open ul {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.ui-select.open li.selected {
+    background: #f1f1f1;
+}
+
+.ui-select ul li {
+    transform: translate(0px, -20px);
+    opacity: 0;
+}
+
+.open.ui-select ul li {
+    transform: translate(0px, 0px);
+    transition: all .4s;
+    opacity: 1;
+}
+
+.ui-select>span:after {
+    content: "";
+    background-image: url(../img/arrow2.png);
+    float: right;
+    display: block;
+    width: var(--select-box-size);
+    height: var(--select-box-size);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .5;
+    border-left: 1px solid #ddd;
+
+}
+
+.ui-select:hover span:after {
+    opacity: 1;
+}

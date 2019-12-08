@@ -1,0 +1,14 @@
+<svg id="video-player" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="456" height="442" viewBox="0 0 456 442">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.638" y1="0.106" x2="0.5" y2="2.236" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c4cc"/>
+      <stop offset="1" stop-color="#7d2ae8"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_3" data-name="Path 3" d="M228,252.105a88.594,88.594,0,1,0-88.594-88.594A88.593,88.593,0,0,0,228,252.105Zm0-157.187a68.6,68.6,0,1,1-68.594,68.6A68.594,68.594,0,0,1,228,94.918Zm0,0" fill="url(#linear-gradient)"/>
+  <path id="Path_4" data-name="Path 4" d="M201.164,207.645a10.156,10.156,0,0,0,10.137-.086l59.852-35.445a10,10,0,0,0,.008-17.207l-59.832-35.445a10.218,10.218,0,0,0-10.164-.086A10.1,10.1,0,0,0,196,128.066v70.891A10.112,10.112,0,0,0,201.164,207.645ZM216,145.613l30.215,17.9L216,181.41Zm0,0" fill="url(#linear-gradient)"/>
+  <g id="Group_1" data-name="Group 1">
+    <path id="Path_5" data-name="Path 5" d="M456,10A10,10,0,0,0,446,0H10A10,10,0,0,0,0,10V317a10,10,0,0,0,10,10H446a10,10,0,0,0,10-10ZM436,307H20V20H436Zm0,0" fill="url(#linear-gradient)"/>
+    <path id="Path_6" data-name="Path 6" d="M446,390H162V359.793A9.485,9.485,0,0,0,152.4,350H112.32c-5.523,0-10.32,4.27-10.32,9.793V390H10a10,10,0,0,0,0,20h92v22.152c0,5.523,4.8,9.848,10.32,9.848H152.4a9.536,9.536,0,0,0,9.6-9.848V410H446a10,10,0,0,0,0-20ZM142,422H122V370h20Zm0,0" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+:root {
+    --theme-color: #00c4cc;
+    --theme-color2: #7d2ae8;
+    --bg-color: #F7F7F7;
+    --font-family: 'Lato', sans-serif;
+    --border-color: #CECECE;
+    --theme-light-color: #A7C9D9;
+    --sidebar-icon-size: 20px;
+    --sidebar-width: 0px;
+    --select-box-size: 45px;
+    --gradient: linear-gradient(90deg, #00c4cc, #7d2ae8);
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--gradient);
+}
+
+.no-radius {
+    border-radius: 0 !important;
+}
+
+.tariff-for-bg {
+    background: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+}
+
+.dropdown-menu.show {
+    margin-top: 10px;
+}
+
+.spacer50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.theme-color {
+    color: var(--theme-color);
+}
+
+.btn-theme-light {
+    color: var(--theme-color);
+    background-color: var(--theme-light-color)
+}
+
+#sidebar {
+    width: 100%;
+    height: 100vh;
+    /* background: var(--theme-color); */
+    left: 0;
+    width: var(--sidebar-width);
+    position: fixed;
+    z-index: 10;
+}
+
+#main-column {
+    width: calc(100% - var(--sidebar-width)) !important;
+    margin-left: var(--sidebar-width);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+#logo {
+    width: 120px;
+    display: block;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+.sidebar--menu-links {
+    padding: 0;
+    padding-top: 30px;
+    overflow: auto;
+}
+
+.sidebar--menu-links li a {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.50px;
+    font-weight: 400;
+    padding: 15px 20px;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: all .2s;
+}
+
+.btn-theme {
+    background-color: var(--theme-color);
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn-theme:hover {
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)) var(--theme-color);
+    color: #fff;
+}
+
+.sidebar--menu-links li a:hover,
+.sidebar--menu-links li a.active {
+    background: #fff;
+    color: var(--theme-color);
+}
+
+.sidebar--menu-links li a:hover svg,
+.sidebar--menu-links li a.active svg {
+    fill: var(--theme-color);
+}
+
+.sidebar--menu-links li a>img,
+.sidebar--menu-links li a svg {
+    width: var(--sidebar-icon-size);
+    height: var(--sidebar-icon-size);
+    margin-right: 10px;
+    fill: #fff;
+}
+
+.custom--navbar {
+    box-shadow: 0px 0px 4px #00000012;
+    background-color: #fff !important;
+}
+
+.user-avatar {
+    --size: 35px;
+    width: var(--size);
+    height: var(--size);
+    background: var(--theme-light-color);
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: var(--size);
+    font-weight: bold;
+    color: #fff;
+}
+
+.input-group-text {
+    background: #fff;
+}
+
+.dropdown-toggle {
+    color: #444;
+}
+
+.form-box {}
+
+.card-base {
+    padding: 30px;
+    background: #fff;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 20px;
+}
+
+.vh-center {
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.vh-center.top {
+    align-items: flex-start;
+}
+
+.ctbox {
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.ctbox:hover {
+    border-color: var(--theme-color);
+}
+
+.ctbox img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.btn-grade {
+    background: var(--gradient);
+}
+
+.action-icons img {
+    width: 20px;
+    opacity: .5;
+}
+
+.action-icons img:hover {
+    opacity: 1;
+}
+
+.video-list .card {
+    margin-bottom: 15px;
+}
+
+.video-list .card .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.video-list .card:hover {
+    border-color: var(--theme-color);
+}
+
+.ctbox a {
+    text-decoration: none;
+    color: #000;
+}
