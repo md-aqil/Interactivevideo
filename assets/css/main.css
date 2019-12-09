@@ -248,3 +248,25 @@ body {
     text-decoration: none;
     color: #000;
 }
+
+/* dragable Elemets */
+.draggable {
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
+    padding: 0.5em;
+    background: var(--theme-color);
+}
+
+
+#droppable {
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
+    padding: 0.5em;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
