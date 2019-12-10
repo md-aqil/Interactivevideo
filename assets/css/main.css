@@ -204,16 +204,46 @@ body {
 
 .ctbox {
     text-align: center;
-    border: 1px solid transparent;
-    padding: 20px;
     cursor: pointer;
+    background: linear-gradient(#00c4cc, #005dd9);
+    color: #fff;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.border-box {
+    border: 5px solid;
+    width: 85%;
+    height: 187px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-box:hover {
+    filter: drop-shadow(2px 2px 6px #00000020);
+
 }
 
 .ctbox:hover {
-    border-color: var(--theme-color);
+    text-decoration: none;
+    color: #fff;
 }
 
+.ctbox h4 {
+    color: #fff;
+    font-size: 35px;
+}
+
+/* .ctbox:hover {
+    border-color: var(--theme-color);
+} */
+
 .ctbox img {
+    display: none;
     width: 80px;
     margin-bottom: 20px;
 }
@@ -260,13 +290,59 @@ body {
 
 
 #droppable {
-    --size: 200px;
+    --size: 300px;
     width: var(--size);
     height: var(--size);
     padding: 0.5em;
     border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     font-size: 30px;
+}
+
+.btn-primary {
+    background-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+.btn-outline-primary {
+    color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--theme-color) !important;
+    color: #fff !important;
+}
+
+
+.btn-block+.btn-block {
+    margin-top: 1rem;
+}
+
+.nav-tabs {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    background-color: var(--theme-color) !important;
+    border-color: var(--theme-color) !important;
+    color: #fff !important;
+
+}
+
+.cai {
+    width: 80%;
+    float: right;
 }
