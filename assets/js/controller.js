@@ -179,7 +179,7 @@ $("#droppable").droppable({
             x.draggable({
                 helper: 'original',
                 cursor: 'move',
-                //containment: '#droppable',
+                containment: '#droppable',
                 tolerance: 'fit',
                 drop: function (event, ui) {
                     $(ui.draggable).remove();
