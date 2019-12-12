@@ -170,7 +170,6 @@ $(".drag").draggable({
 
 $("#droppable").droppable({
     accept: '.drag',
-    containment: "parent",
     activeClass: "drop-area",
     drop: function (e, ui) {
         if ($(ui.draggable)[0].id != "") {

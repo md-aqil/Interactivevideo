@@ -536,13 +536,6 @@ body {
   width: 32px;
 }
 
-.navbuttons {
-
-  border: 1px solid #5bc5cd;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 3px;
-}
 
 .scroll {
   overflow-y: auto;
@@ -578,12 +571,9 @@ body {
 /* dragable */
 
 .video-box {
-  width: 75%;
+  width: 100%;
   height: 400px;
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
-  float: left;
 }
 
 .video-box>img {
