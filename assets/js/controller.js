@@ -146,14 +146,68 @@ $(".submit").click(function () {
 // dragable elements
 
 
-$(function () {
-    $(".draggable").draggable();
-    $("#droppable").droppable({
-        drop: function (event, ui) {
-            $(this)
-                .addClass("ui-state-highlight")
-                .find("p")
-                .html("Dropped!");
+// $(function () {
+//    
+//     $("#droppable").droppable({
+//         drop: function (event, ui) {
+//             $(this)
+//                 .addClass("ui-state-highlight")
+//                 .find("p")
+//                 .html("Dropped!");
+//         }
+//     });
+// });
+
+var x = null;
+//Make element draggable
+$(".drag").draggable({
+    helper: 'clone',
+    cursor: 'move',
+    tolerance: 'fit',
+    revert: true,
+
+});
+
+$("#droppable").droppable({
+    accept: '.drag',
+    containment: "parent",
+    activeClass: "drop-area",
+    drop: function (e, ui) {
+        if ($(ui.draggable)[0].id != "") {
+            x = ui.helper.clone();
+            ui.helper.remove();
+            x.draggable({
+                helper: 'original',
+                cursor: 'move',
+                //containment: '#droppable',
+                tolerance: 'fit',
+                drop: function (event, ui) {
+                    $(ui.draggable).remove();
+                }
+            });
+
+            x.resizable({
+                maxHeight: $('#droppable').height(),
+                maxWidth: $('#droppable').width()
+            });
+            x.addClass('remove');
+            var el = $("<span><a href='Javascript:void(0)' class=\"xicon delete\" title=\"Remove\">X</a></span>");
+            $(el).insertAfter($(x.find('img')));
+            x.appendTo('#droppable');
+            $('.delete').on('click', function () {
+                $(this).parent().parent('span').remove();
+            });
+            $('.delete').parent().parent('span').dblclick(function () {
+                $(this).remove();
+            });
         }
-    });
+    }
+});
+
+$("#remove-drag").droppable({
+    drop: function (event, ui) {
+        $(ui.draggable).remove();
+    },
+    hoverClass: "remove-drag-hover",
+    accept: '.remove'
 });

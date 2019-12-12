@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quincus - Tariff</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom-select.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        .navbar {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body style="padding:0;background:#fff;">
+    <div class="container-fluid">
+        <div class="row" id="dashboard-wrapper">
+            <!-- =========== sidebar ============== -->
+            <aside class="sidebar">
+                <ul class="list-unstyled scene-list">
+                    <li class="media mb-3 button">
+                        <button class="btn btn-primary btn-block">
+                            Ad New
+                            <img class="add-icon" src="assets/img/add.svg" alt="" />
+                        </button>
+                    </li>
+                    <div class="v-scroll">
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 1</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 1</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 1</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 2</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 3</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 4</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 4</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 4</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 4</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 4</h5>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img src="assets/img/children.jpg" alt="Generic placeholder image" />
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Scene 4</h5>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </aside>
+
+            <main id="main-column" style="margin-left:var(--sidebar-width);">
+                <div id="wrapper-dragitem">
+                    <div class="contain-in-box">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbuttons">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <div class="switch-group switch-group-sm info round">
+                                            <label>
+                                                <input type="checkbox" checked="checked" />
+                                                <span></span> Volume
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <div class="switch-group switch-group-sm info round">
+                                            <label>
+                                                <input type="checkbox" checked="checked" />
+                                                <span></span> Preview
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="video-box">
+                        <img src="assets/img/children.jpg" alt="" />
+                        <div id="droppable"></div>
+                    </div>
+                    <div class="contain-in-box">
+                        im contianerbale
+                    </div>
+
+                    <div id="drag-items">
+                        <div id="drag-list" class="drag-list">
+                            <ul class="action-iconlist">
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span id="drag1" class="drag">
+                                        <img src="assets/img/man.svg" alt="" />
+                                    </span>
+                                </li>
+
+                                <!-- <li>
+                                    <div id="remove-drag" style="width: 100%; height: 80px; background-color: #FF8B8B;">
+                                        <div
+                                            style="color: #fff; font-size: 20px; text-align: center; padding-top: 20px;">
+                                            Remove
+                                            <div class="tip">Drop here</div>
+                                        </div>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- =========== Main Dashboard END============== -->
+        </div>
+    </div>
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="assets/js/controller.js"></script>
+</body>
+
+</html>

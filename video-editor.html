@@ -14,7 +14,6 @@
     .navbar {
       margin-top: 15px;
       margin-bottom: 15px;
-
     }
 
     .navbar-nav .nav-item {
@@ -108,45 +107,99 @@
 
       <main id="main-column" class="with-sidebar">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-
                 <div class="switch-group switch-group-sm info round">
                   <label>
                     <input type="checkbox" checked="checked" />
                     <span></span> Volume
                   </label>
                 </div>
-
               </li>
               <li class="nav-item active">
-
                 <div class="switch-group switch-group-sm info round">
                   <label>
                     <input type="checkbox" checked="checked" />
                     <span></span> Preview
                   </label>
                 </div>
-
               </li>
-
             </ul>
           </div>
         </nav>
         <section class="video-container">
           <img src="assets/img/children.jpg" alt="" />
         </section>
+
+        <section>
+          <div id="wrapper">
+            <div class="col" id="droppable"></div>
+            <div class="col" id="col1">
+              <div id="drag-list" class="drag-list">
+                <ul>
+                  <li>
+                    <span id="drag1" class="drag">
+                      <img src="http://placehold.it/80x80/c9112d/fff&text=1" width="100%" height="100%" />
+                    </span><span>Item 1</span>
+                  </li>
+                  <li>
+                    <span id="drag2" class="drag">
+                      <img src="http://placehold.it/80x80/E68500/fff&text=2" width="100%" height="100%" />
+                    </span><span>Item 2</span>
+                  </li>
+                  <li>
+                    <span id="drag3" class="drag">
+                      <img src="http://placehold.it/80x80/00810C/fff&text=3" width="100%" height="100%" />
+                    </span><span>Item 3</span>
+                  </li>
+                  <li>
+                    <div id="remove-drag" style="width: 100%; height: 80px; background-color: #FF8B8B;">
+                      <div style="color: #fff; font-size: 20px; text-align: center; padding-top: 20px;">
+                        Remove
+                        <div class="tip">Drop here</div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <aside class="sidebar sidebar-right">
+        <ul class="action-iconlist scroll">
+          <li>
+            <img src="assets/img/man.svg" alt="" />
+          </li>
 
+          <div id="draggable" class="draggable ui-widget-content">
+            <p>Default (snap: true), snaps to all other draggable elements</p>
+          </div>
+
+          <div id="draggable2" class="draggable ui-widget-content">
+            <p>I only snap to the big box</p>
+          </div>
+
+          <div id="draggable3" class="draggable ui-widget-content">
+            <p>I only snap to the outer edges of the big box</p>
+          </div>
+
+          <div id="draggable4" class="draggable ui-widget-content">
+            <p>I snap to a 20 x 20 grid</p>
+          </div>
+
+          <div id="draggable5" class="draggable ui-widget-content">
+            <p>I snap to a 80 x 80 grid</p>
+          </div>
+        </ul>
       </aside>
       <!-- =========== Main Dashboard END============== -->
     </div>
   </div>
   <script src="assets/js/jQuery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
   <script src="assets/js/controller.js"></script>
 </body>
