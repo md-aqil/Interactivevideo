@@ -210,3 +210,41 @@ $("#remove-drag").droppable({
     hoverClass: "remove-drag-hover",
     accept: '.remove'
 });
+
+// range slider
+$(".range--water")
+    .noUiSlider({
+        start: 1,
+        step: 1,
+        range: {
+            min: 0,
+            max: 35
+        }
+    })
+    .noUiSlider_pips({
+        mode: 'values',
+        density: 5,
+        values: [1, 32],
+        stepped: true,
+        format: wNumb({
+            decimals: 0,
+            //prefix: '+',
+            postfix: ' range'
+        })
+    })
+    .on('set', function (event, value) {
+        if (value < 3) {
+            $(this).val(3);
+        } else if (value > 32) {
+            $(this).val(32);
+        }
+    });
+
+$(".range").Link('lower').to('-inline-<div class="tooltip"></div>', function (value) {
+    $(this).html('<span>' + deneme(value) + "℃" + '</span>');
+});
+
+function deneme(value) {
+    value = value | 0;
+    return value;
+}
