@@ -548,10 +548,11 @@ body {
   flex-wrap: wrap;
   height: 100%;
   justify-content: center;
+  overflwo-y: auto;
 }
 
 .action-iconlist li {
-  --size: 100px;
+  --size: 90px;
   width: var(--size);
   height: var(--size);
   background: #fff;
@@ -560,6 +561,8 @@ body {
   padding: 15px;
   box-shadow: 0px 0px 6px #00000014;
   cursor: grab;
+  max-width: 100px;
+  flex-grow: 1;
 
 }
 
@@ -827,4 +830,18 @@ noUiSlider - 7.0.10 - 2014-12-27 14:50:47
 .noUi-marker-large {
   width: 2px;
   height: 30px;
+}
+
+.asset-pro-tab {
+  background: #efefef;
+}
+
+.asset-pro-tab .nav-link {
+  color: #848484;
+}
+
+.asset-pro-tab .nav-link.active {
+  background: none;
+  border: none;
+  color: var(--theme-color);
 }

@@ -22,6 +22,7 @@
             width: 25%;
             height: 100vh;
             /* position: relative; */
+            overflow-y: auto;
 
         }
 
@@ -157,10 +158,10 @@
                                     </label>
                                 </div>
                             </li>
-                            <li class="nav-item active">
-                                <img src="assets/img/play.svg" alt="">
+                            <li class="nav-item">
+                                <img src="assets/img/play-button.svg" alt="">
                             </li>
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <img src="assets/img/video-pause-button.svg" alt="">
                             </li>
                         </ul>
@@ -181,60 +182,122 @@
 
         </main>
         <aside class="_sidebar _sidebar-right">
-            <div id="drag-list" class="drag-list">
-                <ul class="action-iconlist">
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
-                    <li>
-                        <span id="drag1" class="drag">
-                            <img src="assets/img/man.svg" alt="" />
-                        </span>
-                    </li>
+            <ul class="nav nav-tabs asset-pro-tab" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="Assetes-tab" data-toggle="tab" href="#Assetes" role="tab"
+                        aria-controls="Assetes" aria-selected="false">Assetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="properties-tab" data-toggle="tab" href="#properties" role="tab"
+                        aria-controls="properties" aria-selected="true">properties</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade active show" id="Assetes" role="tabpanel" aria-labelledby="Assetes-tab">
 
-                    <!-- <li>
-                                    <div id="remove-drag" style="width: 100%; height: 80px; background-color: #FF8B8B;">
-                                        <div
-                                            style="color: #fff; font-size: 20px; text-align: center; padding-top: 20px;">
-                                            Remove
-                                            <div class="tip">Drop here</div>
+                    <div id="drag-list" class="drag-list">
+                        <ul class="action-iconlist">
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+                            <li>
+                                <span id="drag1" class="drag">
+                                    <img src="assets/img/man.svg" alt="" />
+                                </span>
+                            </li>
+
+                            <!-- <li>
+                                        <div id="remove-drag" style="width: 100%; height: 80px; background-color: #FF8B8B;">
+                                            <div
+                                                style="color: #fff; font-size: 20px; text-align: center; padding-top: 20px;">
+                                                Remove
+                                                <div class="tip">Drop here</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li> -->
-                </ul>
+                                    </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="properties" role="tabpanel" aria-labelledby="properties-tab">
+                    <p>
+                        properties will show up here...
+                    </p>
+                </div>
+
             </div>
+
         </aside>
     </section>
 
